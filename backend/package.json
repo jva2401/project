@@ -1,0 +1,35 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "set NODE_ENV=develop& nodemon app/index.js --exec babel-node",
+    "qa": "set NODE_ENV=qa& nodemon app/index.js --exec babel-node",
+    "build": "babel app --out-dir dist",
+    "start": "set NODE_ENV=production& node dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "color": "^4.2.3",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0",
+    "mongoose-paginate-v2": "^1.8.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/node": "^7.23.9",
+    "@babel/plugin-transform-runtime": "^7.24.6",
+    "@babel/preset-env": "^7.24.5",
+    "nodemon": "^3.1.0"
+  },
+  "keywords": [],
+  "description": ""
+}
